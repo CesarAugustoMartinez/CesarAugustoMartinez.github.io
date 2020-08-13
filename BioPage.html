@@ -4,26 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bio Page</title>
+    <style>
+        h1 {
+          /* Put a 15-pixel margin at the bottom of the heading. */
+          /* Change the size of your font to 60 pixels high. */
+          font-size: 25px;
+          /* This will color the heading font white. */
+          color: white;
+          /* Align the text to the center of its enclosing element (e.g. div). */
+          text-align: center;
+          /* The background of the heading element will now be black. */
+          background-color: rgb(39, 38, 38);
+        }
+        /* h2 heading tags */
+        
+        h2 {
+          /* Put a 15-pixel margin at the top of all h2 headings. */
+          margin-top: 1px;
+          margin-bottom: 1px;
+          font-size: 20px;
+          text-align: left;
+        }
+        /* h3 heading tags */
+        
+        li {
+           font-size: 14px;
+        }
+        /* All img tags */
+        
+        img {
+          /* 
+                    Center a block element in the middle of its enclosing tag.
+                    When you use the "auto" rule on both left and right margins, 
+                    your browser will do the math necessary to center a block element.
+                    */
+          margin-left: auto;
+          margin-right: auto;
+          /* Block display (more on this later) */
+          display: block;
+        }
+        /* All p tags */
+        
+        p {
+          text-align: left;
+          font-size: 14px;
+          /* Bold the text. */
+          font-weight: bold;
+        }
+        /* All unordered list tags */
+        
+     
+        table {
+            font-family: arial, sans-serif;
+            width: 100%;
+            background-color: rgb(211, 209, 209);
+        }
+        
+        td, th {
+            text-align: left;
+            padding: 15px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        
+        .difrow
+        {
+            background-color: black;
+        }
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+  }    
+      </style>
 </head>
 <body>
 
-    <header>
-        <h1>Student Bio</h1>
-    </header>
-  
-    <h2>Cesar Augusto Martinez</h2>
+    <table>
+        <tr class="difrow">
+            <h1>Student Bio</h1>
+        </tr>
+        <tr>
+          <td>
+            <h2>Cesar Augusto Martinez</h2>
+            <img src="https://picsum.photos/300/300" alt="Photo" width="200" height="200">
+          </td>              
+          <td>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi praesentium cumque in enim similique dolorem cupiditate
+                labore quia debitis rerum, facere delectus doloremque. Libero commodi laborum nesciunt perferendis saepe.
+            </p>
+        </td>
+          <td>
+            <h2>Contact Info</h2>
+            <ul>
+                <li><strong>Email:</strong><a href="#">cesaguma@hotmail.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/CesarAugustoMartinez/" target="_blank">CesarAugustoMartinez</a></li>
+                <li><strong>Portafolio</strong> <a href="#">Coming Soon</a></li>
+            </ul>
 
-    <img src="https://picsum.photos/300/300" alt="Photo" width="200" height="200">
+          </td>
+         
+        </tr>
+        
+    </table>
+    
 
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sequi praesentium cumque in enim similique dolorem cupiditate
-    labore quia debitis rerum, facere delectus doloremque. Libero commodi laborum nesciunt perferendis saepe.
-</p>      
-<h2>Contact Info</h2>
-<ul>
-    <li><strong>Email:</strong><a href="#">cesaguma@hotmail.com</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/CesarAugustoMartinez/" target="_blank">CesarAugustoMartinez</a></li>
-    <li><strong>Portafolio</strong> <a href="#">Coming Soon</a></li>
-</ul>
+    
+
 </body>
 </html>
